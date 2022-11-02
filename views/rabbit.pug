@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
- 
+  - var results = rabbit;
+  div(class="container-fluid")
+      each animal in results
+        div(class="row")
+           div(class="col-sm-2") #{animal.rabbit_Name}
+           div(class="col-sm-2") #{animal.rabbit_Price}
+           div(class="col-sm-2") #{animal.rabbit_gender}
